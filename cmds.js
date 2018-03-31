@@ -93,7 +93,7 @@ exports.testCmd = (socket, rl, id) => {
 	  })
 	})
 	  .catch(error => {
-	    errorlog(error.message);
+	    errorlog(socket,error.message);
 	  })
 	  .then(() => {
 	    rl.prompt();
